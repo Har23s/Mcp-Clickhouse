@@ -37,10 +37,10 @@ load_dotenv()
 
 # Configuration from environment
 CLICKHOUSE_HOST = os.getenv("CLICKHOUSE_HOST", "172.16.3.6")
-CLICKHOUSE_PORT = int(os.getenv("CLICKHOUSE_PORT", "8123"))
-CLICKHOUSE_USER = os.getenv("CLICKHOUSE_USER", "devadmin")
-CLICKHOUSE_PASSWORD = os.getenv("CLICKHOUSE_PASSWORD", "Dev12837sadqdk")
-CLICKHOUSE_SECURE = os.getenv("CLICKHOUSE_SECURE", "false").lower() == "true"
+# CLICKHOUSE_PORT = int(os.getenv("CLICKHOUSE_PORT", "8123"))
+# CLICKHOUSE_USER = os.getenv("CLICKHOUSE_USER", "devadmin")
+# CLICKHOUSE_PASSWORD = os.getenv("CLICKHOUSE_PASSWORD", "Dev12837sadqdk")
+# CLICKHOUSE_SECURE = os.getenv("CLICKHOUSE_SECURE", "false").lower() == "true"
 
 API_BASE_PATH = os.getenv("API_BASE_PATH", "/clickhouse")
 PORT = int(os.getenv("PORT", "8200"))
@@ -430,15 +430,15 @@ class ClickHouseMCPServer:
         
         available_tools = list(self.tool_handler.get_available_tools().keys())
         
-        print("🚀 ClickHouse MCP Server")
+        print(" ClickHouse MCP Server")
         print("=" * 60)
-        print(f"🗄️  Database: {CLICKHOUSE_HOST}:{CLICKHOUSE_PORT}")
-        print(f"🔧 Tools: {', '.join(available_tools)}")
-        print(f"📊 Total Tools: {len(available_tools)}")
-        print(f"📍 Base Path: {API_BASE_PATH}")
-        print(f"📡 SSE: http://{run_host}:{run_port}{API_BASE_PATH}/sse")
-        print(f"🏥 Health: http://{run_host}:{run_port}{API_BASE_PATH}/health")
-        print(f"📋 Root: http://{run_host}:{run_port}{API_BASE_PATH}/")
+        print(f"🗄️ Database: {CLICKHOUSE_HOST}:{CLICKHOUSE_PORT}")
+        print(f" Tools: {', '.join(available_tools)}")
+        print(f" Total Tools: {len(available_tools)}")
+        print(f" Base Path: {API_BASE_PATH}")
+        print(f" SSE: http://{run_host}:{run_port}{API_BASE_PATH}/sse")
+        print(f" Health: http://{run_host}:{run_port}{API_BASE_PATH}/health")
+        print(f" Root: http://{run_host}:{run_port}{API_BASE_PATH}/")
         print("=" * 60)
         
         # Test connection before starting
