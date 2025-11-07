@@ -8,4 +8,4 @@ The technology stack includes SQL Server as the source system, Azure Databricks 
 
 The project structure consists of separate folders for notebooks (data extraction, transformation, and loading scripts), configuration files (SQL Server and ClickHouse connection details), API scripts (FastAPI endpoint and utilities), and analysis resources (queries and dashboard templates).
 
-To run the projectt, the repository can be cloned from GitHub. After updating the configuration files with database details, dependencies are installed, and the ETL script can be executed to begin the data migration process. Once the data is loaded into ClickHouse, users can perform SQL-based analysis such as department-wise salary summaries or build interactive dashboards.
+To run the projectt, the repository can be cloned from GitHub. After updating the configuration files with database details, dependencies are installed, and the ETL script can be executed to begin the data migration process. Once the data is loaded into ClickHouse, users can perform SQL-based analysis such as department-wise salary summaries or build interactive dashboardss.
