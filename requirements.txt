@@ -4,7 +4,7 @@ uvicorn[standard]==0.24.0
 python-multipart>=0.0.9
 
 # MCP Python SDK (official)
-mcp[cli]>=1.12.00
+mcp[cli]>=1.12.0
 
 # HTTP client and utilities
 requests==2.31.0
