@@ -155,7 +155,7 @@ class ListTables:
         }
     
     def execute(self, database: str) -> str:
-        """List tables in a database"""
+        """List tables in a databases"""
         try:
             client = self.connection.get_client()
             result = client.query(f"SHOW TABLES FROM {database}")
