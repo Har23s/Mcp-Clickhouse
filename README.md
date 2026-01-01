@@ -1,6 +1,6 @@
 
 <img width="1150" height="769" alt="Screenshot 2025-11-06 172431" src="https://github.com/user-attachments/assets/04da1629-f4e1-48d8-84e7-f4d9f121c12b" />
-The Datagpt  ClickHouse Data Migration and Analysis project focuses on migrating data from an on-premise SQL Server to ClickHouse using PySpark (on Databricks) and FastAPI. The main objective is to enable fast, cloud-based analytics through automated ETL and Change Data Capture (CDC) processes.
+The Datagpt project  ClickHouse Data Migration and Analysis project focuses on migrating data from an on-premise SQL Server to ClickHouse using PySpark (on Databricks) and FastAPI. The main objective is to enable fast, cloud-based analytics through automated ETL and Change Data Capture (CDC) processes.
 
 In this project, data is first extracted from SQL Server using PySpark, then transformed and cleaned within Databrickss. The processed data is sent to ClickHouse through a FastAPI endpoint, where it becomes available for analytical queries and visualization through tools such as Grafana or Apache Superset. This migration ensures high performance, real-time analytics, and scalability for enterprise dataset.
 
